@@ -114,8 +114,6 @@ class MailWatcher(object):
             logger.debug("Got invalid attachment, some keys were missing")
             return
 
-        return data
-
     def process_message(self, uid):
         email = self.get_mail(uid)
         timetable_config = self.get_timetable_config_from_mail(email)
